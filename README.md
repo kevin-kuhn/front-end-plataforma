@@ -12,7 +12,7 @@ Para instalar as dependencias
 
 ### `yarn dev`
 
-Sobe o projeto em desenvolvimento
+Sobe o projeto em desenvolvimento.
 Abra [http://localhost:3000](http://localhost:3000) para ver funcionando no browser.
 
 ### Desenvolvido utilizando:
