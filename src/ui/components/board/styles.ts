@@ -19,8 +19,7 @@ export const MainStyled = styled.main`
 export const FormContainerStyled = styled.form`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 1024px;
+  width: 80%;
 
   > .form-header {
     display: flex;
@@ -87,6 +86,10 @@ export const FormContainerStyled = styled.form`
         'observacoes';
     }
   }
+
+	@media (max-width: 768px) {
+		width: 95%;
+	}
 `
 
 interface OptionsProps {
@@ -98,9 +101,8 @@ export const OptionsStyled = styled.div<OptionsProps>`
   display: flex;
   gap: 16px;
   margin-top: 20px;
-  width: 100%;
+  width: 80%;
   justify-content: space-between;
-  max-width: 1024px;
 
   > div {
     width: 50%;
@@ -165,4 +167,13 @@ export const OptionsStyled = styled.div<OptionsProps>`
   > div:last-of-type {
     opacity: ${props => (props.showLaboratoriosOptions ? 1 : 0)};
   }
+
+	@media (max-width: 768px) {
+		width: 95%;
+		flex-direction: column;
+
+		> div {
+			width: 100%;
+		}
+	}
 `

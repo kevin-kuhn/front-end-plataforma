@@ -49,7 +49,7 @@ const Board: React.FC = () => {
     isValidating,
     showPropriedadesOptions,
     showLaboratoriosOptions,
-		setIsSubmiting,
+    setIsSubmiting,
     handleSubmit,
     getFieldProps,
     handlePropriedadesClick,
@@ -67,8 +67,8 @@ const Board: React.FC = () => {
       Object.keys(errors).length
         ? toast.error('Preencha todos os campos corretamente!')
         : toast.success('Cadastro realizado com sucesso!')
-			
-			setIsSubmiting(false)
+
+      setIsSubmiting(false)
     }
   }, [isSubmitting, isValidating])
 
@@ -212,7 +212,36 @@ const Board: React.FC = () => {
           </div>
         </OptionsStyled>
       </MainStyled>
-      <Toaster position="bottom-center" reverseOrder={false} />
+      <Toaster
+        position="bottom-center"
+        reverseOrder={false}
+        toastOptions={{
+          style: {
+            width: '800px',
+            height: '50px'
+          },
+          success: {
+            style: {
+              background: 'green',
+              color: 'white'
+            },
+            iconTheme: {
+              primary: 'white',
+              secondary: 'green'
+            }
+          },
+          error: {
+            style: {
+              background: 'red',
+              color: 'white'
+            },
+            iconTheme: {
+              primary: 'white',
+              secondary: 'red'
+            }
+          }
+        }}
+      />
     </>
   )
 }
