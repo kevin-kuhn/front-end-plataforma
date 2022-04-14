@@ -4,7 +4,7 @@
 
 ### Scripts
 
-No diretório do proojeto, executar:
+No diretório do projeto, executar:
 
 ### `yarn install`
 
